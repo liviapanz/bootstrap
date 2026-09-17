@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Produtos | Amigo Fiel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Nunito:wght@700;800;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root { --ink:#23313b; --coral:#f47b61; --coral-dark:#d95f49; --mint:#dff3ec; --yellow:#ffd166; --cream:#fffaf2; }
+    body { background:var(--cream); color:var(--ink); font-family:"DM Sans",sans-serif; }
+    h1,h2,h3,.navbar-brand { font-family:"Nunito",sans-serif; }
+    .navbar { background:var(--cream); border-bottom:1px solid rgba(35,49,59,.1); }
+    .navbar-brand { color:var(--ink); font-size:1.45rem; font-weight:900; }
+    .brand-mark { align-items:center; background:var(--coral); border-radius:50%; color:white; display:inline-flex; font-size:1.25rem; height:38px; justify-content:center; margin-right:.45rem; width:38px; }
+    .nav-link { color:var(--ink); font-weight:700; } .nav-link:hover { color:var(--coral-dark); }
+    .btn-coral { background:var(--coral); border:0; color:white; font-weight:700; } .btn-coral:hover { background:var(--coral-dark); color:white; }
+    .page-heading { background:var(--mint); border-radius:24px; padding:3.5rem; }
+    .eyebrow,.section-label { color:var(--coral-dark); font-size:.78rem; font-weight:800; letter-spacing:.12em; text-transform:uppercase; }
+    .product-card { background:white; border:0; border-radius:16px; box-shadow:0 10px 25px rgba(35,49,59,.06); height:100%; overflow:hidden; }
+    .product-card img { height:190px; object-fit:cover; width:100%; } footer { background:var(--ink); color:white; } .footer-muted { color:#b9c6c9; }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg sticky-top"><div class="container py-2">
+    <a class="navbar-brand" href="index.html"><span class="brand-mark">🐾</span>Amigo Fiel</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Abrir menu"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="menu"><ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+      <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li><li class="nav-item"><a class="nav-link active" href="produtos.html">Produtos</a></li><li class="nav-item"><a class="nav-link" href="agendamentos.html">Agendamentos</a></li><li class="nav-item"><a class="btn btn-coral rounded-pill px-4" href="contato.html">Fale conosco</a></li>
+    </ul></div>
+  </div></nav>
+  <main class="container py-4 py-md-5">
+    <header class="page-heading mb-5"><p class="eyebrow mb-3">Escolhas que fazem bem</p><h1 class="display-4 fw-bold mb-3">Produtos para uma rotina mais feliz.</h1><p class="lead mb-0 col-lg-7">Uma seleção de alimentação, higiene e diversão para cães e gatos de todas as idades.</p></header>
+    <div class="row g-4">
+      <div class="col-12 col-md-4"><article class="product-card"><img src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?auto=format&fit=crop&w=700&q=85" alt="Cachorro com brinquedo"><div class="p-4"><p class="section-label mb-2">Diversão</p><h2 class="h4">Brinquedos resistentes</h2><p class="text-secondary">Para gastar energia e transformar qualquer cantinho em brincadeira.</p><a href="contato.html" class="btn btn-coral rounded-pill">Tenho interesse</a></div></article></div>
+      <div class="col-12 col-md-4"><article class="product-card"><img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=700&q=85" alt="Cachorro descansando em uma cama"><div class="p-4"><p class="section-label mb-2">Conforto</p><h2 class="h4">Camas e mantas</h2><p class="text-secondary">Aquele lugar especial para descansar depois de um dia cheio.</p><a href="contato.html" class="btn btn-coral rounded-pill">Tenho interesse</a></div></article></div>
+      <div class="col-12 col-md-4"><article class="product-card"><img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&w=700&q=85" alt="Cachorro recebendo um petisco"><div class="p-4"><p class="section-label mb-2">Nutrição</p><h2 class="h4">Petiscos naturais</h2><p class="text-secondary">Recompensas gostosas para treinar, celebrar e demonstrar carinho.</p><a href="contato.html" class="btn btn-coral rounded-pill">Tenho interesse</a></div></article></div>
+    </div>
+  </main>
+  <footer class="mt-5"><div class="container py-4 d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3"><div><strong class="fs-5">Amigo Fiel</strong><div class="footer-muted small">Cuidado que vira confiança.</div></div><div class="footer-muted small">Rua das Flores, 120 · (11) 99999-0000</div><div class="footer-muted small">© 2024 Amigo Fiel</div></div></footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

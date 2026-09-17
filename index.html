@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Amigo Fiel | Petshop</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Nunito:wght@700;800;900&display=swap" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+		<style>
+			:root {
+				--ink: #23313b;
+				--coral: #f47b61;
+				--coral-dark: #d95f49;
+				--mint: #dff3ec;
+				--yellow: #ffd166;
+				--cream: #fffaf2;
+			}
+
+			body {
+				background: var(--cream);
+				color: var(--ink);
+				font-family: "DM Sans", sans-serif;
+			}
+
+			h1, h2, h3, .navbar-brand {
+				font-family: "Nunito", sans-serif;
+			}
+
+			.navbar {
+				background: var(--cream);
+				border-bottom: 1px solid rgba(35, 49, 59, .1);
+			}
+
+			.navbar-brand {
+				color: var(--ink);
+				font-size: 1.45rem;
+				font-weight: 900;
+			}
+
+			.brand-mark {
+				align-items: center;
+				background: var(--coral);
+				border-radius: 50% 50% 45% 45%;
+				color: white;
+				display: inline-flex;
+				font-size: 1.25rem;
+				height: 38px;
+				justify-content: center;
+				margin-right: .45rem;
+				width: 38px;
+			}
+
+			.nav-link {
+				color: var(--ink);
+				font-weight: 700;
+			}
+
+			.nav-link:hover { color: var(--coral-dark); }
+
+			.btn-coral {
+				background: var(--coral);
+				border: 0;
+				color: white;
+				font-weight: 700;
+			}
+
+			.btn-coral:hover {
+				background: var(--coral-dark);
+				color: white;
+			}
+
+			.hero {
+				background: var(--mint);
+				border-radius: 24px;
+				min-height: 405px;
+				overflow: hidden;
+				position: relative;
+			}
+
+			.hero-content { position: relative; z-index: 1; }
+
+			.eyebrow {
+				color: var(--coral-dark);
+				font-size: .78rem;
+				font-weight: 800;
+				letter-spacing: .12em;
+				text-transform: uppercase;
+			}
+
+			.hero h1 {
+				font-size: clamp(2.5rem, 5vw, 4.6rem);
+				line-height: .98;
+				max-width: 620px;
+			}
+
+			.hero-image {
+				bottom: 0;
+				height: 100%;
+				object-fit: cover;
+				position: absolute;
+				right: 0;
+				width: 48%;
+			}
+
+			.hero-shape {
+				background: var(--yellow);
+				border-radius: 50%;
+				height: 310px;
+				position: absolute;
+				right: 22%;
+				top: 12%;
+				width: 310px;
+			}
+
+			.section-label {
+				font-size: .8rem;
+				font-weight: 800;
+				letter-spacing: .1em;
+				text-transform: uppercase;
+			}
+
+			.feature-panel {
+				background: white;
+				border: 1px solid rgba(35, 49, 59, .08);
+				border-radius: 16px;
+				height: 100%;
+				padding: 2rem;
+			}
+
+			.feature-icon {
+				align-items: center;
+				background: var(--yellow);
+				border-radius: 12px;
+				display: inline-flex;
+				font-size: 1.7rem;
+				height: 54px;
+				justify-content: center;
+				margin-bottom: 1rem;
+				width: 54px;
+			}
+
+			.service-card {
+				background: white;
+				border: 0;
+				border-radius: 16px;
+				box-shadow: 0 10px 25px rgba(35, 49, 59, .06);
+				height: 100%;
+				overflow: hidden;
+			}
+
+			.service-card img {
+				height: 175px;
+				object-fit: cover;
+				width: 100%;
+			}
+
+			footer {
+				background: var(--ink);
+				color: white;
+			}
+
+			.footer-muted { color: #b9c6c9; }
+
+			@media (max-width: 767.98px) {
+				.hero { min-height: 600px; }
+				.hero-image { height: 48%; top: auto; width: 100%; }
+				.hero-shape { height: 250px; right: 16%; top: 48%; width: 250px; }
+			}
+		</style>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg sticky-top">
+			<div class="container py-2">
+				<a class="navbar-brand" href="#inicio"><span class="brand-mark">🐾</span>Amigo Fiel</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="menu">
+					<ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+						<li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+						<li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
+						<li class="nav-item"><a class="nav-link" href="agendamentos.html">Agendamentos</a></li>
+						<li class="nav-item"><a class="btn btn-coral rounded-pill px-4" href="contato.html">Fale conosco</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<main class="container py-4 py-md-5" id="inicio">
+			<!-- Linha 1: jumbotron com uma coluna de tamanho 12. -->
+			<div class="row mb-5">
+				<div class="col-12">
+					<section class="hero d-flex align-items-start p-4 p-md-5">
+						<div class="hero-shape" aria-hidden="true"></div>
+						<div class="hero-content col-lg-7 py-md-4">
+							<p class="eyebrow mb-3">Petshop com carinho de casa</p>
+							<h1 class="mb-3">Mais alegria para quem faz parte da família.</h1>
+							<p class="lead mb-4">Tudo para seu pet viver saudável, cheiroso e cheio de histórias para contar.</p>
+							<a class="btn btn-coral btn-lg rounded-pill px-4" href="#servicos">Conheça nossos serviços</a>
+						</div>
+						<img class="hero-image" src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=900&q=85" alt="Cachorro feliz olhando para a câmera">
+					</section>
+				</div>
+			</div>
+
+			<!-- Linha 2: duas colunas de tamanho 6. -->
+			<div class="row g-4 mb-5" id="cuidado">
+				<div class="col-12 col-md-6">
+					<article class="feature-panel">
+						<span class="feature-icon" aria-hidden="true">✂️</span>
+						<p class="section-label text-secondary mb-2">Bem-estar</p>
+						<h2 class="h3">Banho e tosa sem estresse</h2>
+						<p class="mb-0 text-secondary">Uma equipe paciente, produtos suaves e muito respeito ao tempo de cada pet.</p>
+					</article>
+				</div>
+				<div class="col-12 col-md-6">
+					<article class="feature-panel">
+						<span class="feature-icon" aria-hidden="true">🩺</span>
+						<p class="section-label text-secondary mb-2">Saúde</p>
+						<h2 class="h3">Orientação para uma vida leve</h2>
+						<p class="mb-0 text-secondary">Encontre itens selecionados e receba dicas para cuidar melhor todos os dias.</p>
+					</article>
+				</div>
+			</div>
+
+			<!-- Linha 3: três colunas iguais, cada uma com um serviço. -->
+			<div class="row g-4" id="servicos">
+				<div class="col-12 col-md-4">
+					<article class="service-card">
+						<img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=700&q=85" alt="Cachorro tomando banho">
+						<div class="p-4"><p class="section-label text-secondary mb-2">01 / Higiene</p><h3 class="h4">Banho relaxante</h3><p class="text-secondary mb-0">Um momento gostoso para renovar as energias.</p></div>
+					</article>
+				</div>
+				<div class="col-12 col-md-4">
+					<article class="service-card">
+						<img src="https://images.unsplash.com/photo-1599443015574-b7f1b8e8c1c7?auto=format&fit=crop&w=700&q=85" alt="Gato sendo acariciado">
+						<div class="p-4"><p class="section-label text-secondary mb-2">02 / Cuidados</p><h3 class="h4">Clube dos gatinhos</h3><p class="text-secondary mb-0">Atenção especializada para os felinos da casa.</p></div>
+					</article>
+				</div>
+				<div class="col-12 col-md-4">
+					<article class="service-card">
+						<img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=700&q=85" alt="Dois cachorros brincando no parque">
+						<div class="p-4"><p class="section-label text-secondary mb-2">03 / Diversão</p><h3 class="h4">Passeios felizes</h3><p class="text-secondary mb-0">Acessórios e novidades para brincar muito mais.</p></div>
+					</article>
+				</div>
+			</div>
+		</main>
+
+		<footer class="mt-5" id="contato">
+			<div class="container py-4 d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+				<div><strong class="fs-5">Amigo Fiel</strong><div class="footer-muted small">Cuidado que vira confiança.</div></div>
+				<div class="footer-muted small">Rua das Flores, 120 · (11) 99999-0000</div>
+				<div class="footer-muted small">© 2024 Amigo Fiel</div>
+			</div>
+		</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
